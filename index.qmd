@@ -1,0 +1,17 @@
+---
+listing:
+  id: formations
+  contents: cards
+  sort: "order asc"
+  template: listing-grid.ejs
+page-layout: full
+toc: false
+---
+
+# Introduction à la gestion de la confidentialité des données
+
+Julien Jamme, Insee
+
+
+::: {#formations}
+:::

@@ -1,0 +1,5 @@
+---
+title: "Mesurer la perte d'information"
+echo: false
+output: false
+---

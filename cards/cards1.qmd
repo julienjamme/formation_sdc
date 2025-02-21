@@ -1,0 +1,13 @@
+---
+title: Documentation 
+image: img/doc.jpeg
+date: last-modified
+description: |
+  <b>Description :</b> Documentation utile pour aller plus loin 
+author: Julien Jamme
+slides:
+  text: Doc
+  url: src/documentation/index.html
+order: 1
+lang: fr-FR
+---

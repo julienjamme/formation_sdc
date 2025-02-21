@@ -1,0 +1,51 @@
+project:
+  type: website
+  render:
+    - /slides/donnees_tabulees.qmd
+    - index.qmd
+    - utils/report.qmd
+    - "/cards/**/*.qmd"
+    - "/exercises/**/*.qmd"
+
+website:
+  title: "Introduction aux méthodes statistiques de gestion de la confidentialité"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: exercises/donnees_tabulees_sdc.html
+        text: Introduction
+      - text: "Données tabulées"
+        menu:
+          - exercises/utiliser_rtauargus.qmd
+          - exercises/utiliser_gausssupression.qmd
+          - exercises/utiliser_cellkey.qmd
+      - text: "Données individuelles"
+        menu:
+          - exercises/utiliser_synthpop.qmd
+          - exercises/utiliser_sdcmicro.qmd
+      - text: "Mesurer le risque"
+        menu:
+          - exercises/risque.qmd
+      - text: "Mesurer la perte d'information"
+        menu:
+          - exercises/utilite.qmd
+      - text: "Bilan"
+        menu:
+          - exercises/eval.qmd
+      - icon: github
+        href: https://github.com/julienjamme/formation_sdc
+    background: "#802a03"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-annotations: hover
+    code-link: true
+
+author: Julien Jamme
+
+
+

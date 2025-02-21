@@ -1,0 +1,16 @@
+---
+image: donnees_tabulees_sdc.jpg
+title: Gestion de la confidentialité de données tabulées
+date: "2025-02-24"
+description: |
+  <br>
+  Introduction aux concepts et méthodes
+  de gestion de la confidentialité
+  des données tabulées
+  <br>
+categories:
+  - Introduction
+website: /slides/donnees_tabulees.html
+exercise: /exercises/donnees_tabulees.html
+order: 1
+---

@@ -1,0 +1,36 @@
+---
+title: "Gestion de la confidentialité des données tabulées"
+echo: true
+number-sections: true
+bibliography: ../references.bib
+---
+
+
+<details>
+<summary>
+Dérouler les _slides_ ci-dessous ou [cliquer ici](/slides/donnees_tabulees_sdc.qmd)
+pour afficher les slides en plein écran.
+</summary>
+
+
+``` {.yaml code-preview="/slides/donnees_tabulees_sdc.qmd"}
+```
+
+</details>
+
+L'objectif du TP est d'apprendre à manipuler les outils 
+de référence pour appliquer les règles du secret statistique 
+à des données tabulées à partir de méthodes suppressives 
+avec {{< fa brands r-project >}} et $\tau$-Argus.
+
+
+<!----
+Commentaire
+------>
+
+::: {.callout-note}
+
+Une note de présentation + éléments pour aller plus loin.
+
+:::
+

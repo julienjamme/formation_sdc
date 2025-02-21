@@ -1,0 +1,6 @@
+---
+title: Générer des données synthétiques
+echo: false
+output: false
+---
+

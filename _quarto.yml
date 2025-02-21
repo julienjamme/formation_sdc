@@ -3,7 +3,6 @@ project:
   render:
     - /slides/donnees_tabulees.qmd
     - index.qmd
-    - utils/report.qmd
     - "/cards/**/*.qmd"
     - "/exercises/**/*.qmd"
 

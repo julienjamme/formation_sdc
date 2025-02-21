@@ -1,0 +1,118 @@
+---
+title: Introduction à la gestion de la confidentialité des données 
+subtitle: |
+  **[Chapitre 1: Gestion des données tabulées]{.orange}**
+authors: |
+  Julien Jamme
+# date: 
+slide-number: true
+header: |
+  [Retour à la page principale du cours](https://formation-confidentialite.fr/)
+footer: |
+  Introduction à la gestion de la confidentialité des données , Insee ([retour page principale](/))
+# uncomment for French presentations:
+lang: fr-FR
+# for blind readers:
+slide-tone: false
+# for @olevitt:
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+# uncomment to use the multiplex mode:
+#multiplex: true
+format:
+  onyxia-revealjs
+  # pick the light mode (onyxia-revealjs) or the dark mode (onyxia-dark-revealjs)
+  #onyxia-dark-revealjs:
+controls: true
+css: custom.css
+from: markdown+emoji
+listing:
+  id: sample-listings
+  contents: teaching
+  sort: "date desc"
+  type: table
+#filters:
+#  - reveal-header
+---
+
+## Introduction
+
+::: {.callout-note}
+- Exercices associés à ce chapitre [ici](/exercises/donnees_tabulees_sdc.html)
+:::
+
+![](../cards/donnees_tabulees/donnees_tabulees_sdc.jpg){fig-align="center"}
+
+- [Retour à la page principale](/)
+
+
+## Introduction
+
+- La gestion de la confidentialité des données tabulées
+    + Méthodes suppressives
+    + Méthodes perturbatrices
+    
+. . .
+
+- Les outils :
+    + <i class="fa-brands fa-r-project"></i>
+    + $\tau$-Argus
+
+
+
+## Les packages
+
+__Installation de la dernière version__
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1"
+remotes::install_github(
+  "InseeFrLab/rtauargus",
+  build_vignettes = FALSE,
+  upgrade = "never",
+  ref = "v-1.2.0"
+)
+```
+
+
+```{r}
+#| output: false
+#| echo: true
+library(rtauargus)
+library(dplyr)
+```
+
+::: {.callout-note}
+Inspiration pour ces slides :
+
+- Documentation collaborative [`utilitR`](https://www.book.utilitr.org/) ;
+- Manuel [`rtauargus`](https://inseefrlab.github.io/rtauargus/) ;
+- Manuel [`Tau-Argus`](https://research.cbs.nl/casc/Software/TauManualV4.1.pdf) ;
+- Chapitre 5 du [`Handbook on Statistical Disclosure Control`](https://sdctools.github.io/HandbookSDC/) 
+:::
+
+
+
+
+## `rtauargus`
+
+__Préciser la localisation du logiciel Tau-Argus__
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+loc_tauargus <- "Y:/Logiciels/TauArgus/TauArgus4.2.2b1/TauArgus.exe"
+options(rtauargus.tauargus_exe = loc_tauargus)
+```
+
+
+## `rtauargus` {.smaller}
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+data("turnover_act_size")
+str(turnover_act_size)
+```

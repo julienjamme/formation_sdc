@@ -59,17 +59,29 @@ listing:
     + $\tau$-Argus
 
 
-## Jeu de données des exemples
+
+## Les packages
+
+__Installation de la dernière version__
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1"
+remotes::install_github(
+  "InseeFrLab/rtauargus",
+  build_vignettes = FALSE,
+  upgrade = "never",
+  ref = "v-1.2.0"
+)
+```
+
 
 ```{r}
 #| output: false
 #| echo: true
-library(doremifasol)
+library(rtauargus)
 library(dplyr)
-
-df <- telechargerDonnees("FILOSOFI_DISP_IRIS", date = 2017) %>%
-  as_tibble() %>%
-  sample_frac(0.1)
 ```
 
 ::: {.callout-note}
@@ -82,19 +94,7 @@ Inspiration pour ces slides :
 :::
 
 
-## `rtauargus`
 
-__Installation de la dernière version__
-
-```{r}
-#| echo: true
-#| code-line-numbers: "1"
-remotes::install_github(
-  "InseeFrLab/rtauargus",
-  build_vignettes = FALSE,
-  upgrade = "never"
-)
-```
 
 ## `rtauargus`
 

@@ -38,11 +38,18 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [cosmo, style/styles.scss]
+      dark: [cyborg, style/styles.scss]
     toc: true
     code-annotations: hover
     code-link: true
+    code-copy: true
+    code-overflow: wrap
+    include-in-header: "style/fontawesome.html"
+    header-includes: |
+      <link rel="icon" type="image/png" sizes="32x32" href="slides/_extensions/InseeFrLab/onyxia/favicon-32x32.png">
+
 
 author: Julien Jamme
 

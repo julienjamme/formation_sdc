@@ -39,8 +39,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, style/styles.css]
-      dark: [cyborg, style/styles.css]
+      light: [cosmo, style/styles.scss]
+      dark: [cyborg, style/styles.scss]
     toc: true
     code-annotations: hover
     code-link: true
